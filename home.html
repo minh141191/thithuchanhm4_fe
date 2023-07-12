@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.4.js"></script>
+    <script src="index.js"></script>
+</head>
+<body onload="findAll()">
+<div id="list"></div>
+<div id="create">
+    <h1>Create Form</h1>
+    <button onclick="findAll()">Back to list city</button>
+    <table border="1">
+        <tr>
+            <td><label for="name">Name</label></td>
+            <td><input type="text" id="name"></td>
+        </tr>
+        <tr>
+            <td><label for="acreage">Acreage</label></td>
+            <td><input type="text" id="acreage"></td>
+        </tr>
+        <tr>
+            <td><label for="population">Population</label></td>
+            <td><input type="text" id="population"></td>
+        </tr>
+        <tr>
+            <td><label for="gdp">GDP</label></td>
+            <td><input type="text" id="gdp"></td>
+        </tr>
+        <tr>
+            <td><label for="type">Type</label></td>
+            <td><input type="text" id="type"></td>
+        </tr>
+        <tr>
+            <td><label for="selectCountry">Country</label></td>
+            <td>
+                <div id="selectCountry"></div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center">
+                <button onclick="create()">Create</button>
+            </td>
+        </tr>
+    </table>
+
+</div>
+<div id="update">
+    <h1>Update Form</h1>
+    <button onclick="findAll()">Back to list city</button>
+    <table border="1">
+        <tr>
+            <td><label for="name-update">Name</label></td>
+            <td><input type="text" id="name-update"></td>
+        </tr>
+        <tr>
+            <td><label for="acreage-update">Acreage</label></td>
+            <td><input type="text" id="acreage-update"></td>
+        </tr>
+        <tr>
+            <td><label for="population-update">Population</label></td>
+            <td><input type="text" id="population-update"></td>
+        </tr>
+        <tr>
+            <td><label for="gdp-update">GDP</label></td>
+            <td><input type="text" id="gdp-update"></td>
+        </tr>
+        <tr>
+            <td><label for="type-update">Type</label></td>
+            <td><input type="text" id="type-update"></td>
+        </tr>
+        <tr>
+            <td><label for="selectCountryUpdate">Country</label></td>
+            <td>
+                <div id="selectCountryUpdate"></div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center">
+                <button onclick="update()">Update</button>
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="views"></div>
+</body>
+</html>
